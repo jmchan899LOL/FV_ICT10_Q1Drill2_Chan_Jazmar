@@ -6,13 +6,13 @@ def show_profile(e):
     age = document.getElementById("input2").value
     school = document.getElementById("input3").value
 # this is a multiline string in Python using f-string formatting
-    multiline = f"""📘 Student Profile
+    multiline = f"""Student Profile
 Name   : {name}
 Age    : {age}
 School : {school}
 """
     # this is the notes section that uses the same variables for name, age, and school and will be the second part of the output for the multiline string
-    notes = f"""📝 Notes:
+    notes = f"""Notes:
 {name} is currently {age} years old and studies at {school}.
 This information 
 was gathered through 
@@ -24,3 +24,4 @@ in Python via PyScript."""
     html_output = f"{multiline}{notes}"
 # this displays the final output in the output div
     display(html_output, target="output1")
+
